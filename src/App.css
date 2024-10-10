@@ -42,7 +42,15 @@
 .post {
   text-align: left;
   margin: auto;
+  padding-top: 2%;
   width: 90%;
+  padding-bottom: 5%;
+}
+
+.post .timestamp {
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
 }
 
 .post .post-content {
