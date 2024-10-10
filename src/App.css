@@ -38,3 +38,14 @@
 .nav-links a:hover {
   text-decoration: underline; /* Underline on hover */
 }
+
+.post {
+  text-align: left;
+  margin: auto;
+  width: 90%;
+}
+
+.post .post-content {
+  width: 95%;
+  margin: auto;
+}

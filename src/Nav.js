@@ -1,9 +1,9 @@
 import NameTag from './NameTag.js'
 
-const Nav = () => {
+const Nav = ({ name }) => {
     return (
         <nav className="navbar">
-            <NameTag name="Logan Potts" />
+            <NameTag name={name} />
             <div className="nav-links">
                 <a>Test</a>
                 <a>Test</a>
