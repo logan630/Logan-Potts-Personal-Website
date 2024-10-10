@@ -1,5 +1,10 @@
 import { useState, useEffect } from 'react';
 import Markdown from 'react-markdown';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { twilight as style } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import rehypeKatex from 'rehype-katex';
+import remarkMath from 'remark-math';
+import 'katex/dist/katex.min.css';
 
 const BlogPost = ({ timestamp, source }) => {
     const [markdown, setMarkdown] = useState('');
@@ -13,7 +18,36 @@ const BlogPost = ({ timestamp, source }) => {
     return (
         <div className="post">
             <p className="timestamp">{timestamp}</p>
-            <Markdown className="post-content">{markdown}</Markdown>
+            <Markdown 
+                className="post-content"
+                children={markdown}
+                
+                // Renders mathematical formulas written in Latex syntax
+                remarkPlugins={[remarkMath]}
+                rehypePlugins={[rehypeKatex]}
+
+                // Taken from the official react-markdown documentation
+                // Applies syntax highlighting to any code block with a language associated with it
+                components={{
+                    code(props) {
+                        const { children, className, node, ...rest } = props;
+                        const match = /language-(\w+)/.exec(className || '');
+                        return match ? (
+                            <SyntaxHighlighter 
+                                {...rest}
+                                PreTag="div"
+                                children={String(children).replace(/\n$/, '')}
+                                language={match[1]}
+                                style={style}
+                            />
+                        ) : (
+                            <code {...rest} className={className}>
+                                {children}
+                            </code>
+                        )
+                    }
+                }}
+            />
         </div>
     )
 };

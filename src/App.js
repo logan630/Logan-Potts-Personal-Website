@@ -15,9 +15,11 @@ function App() {
   return (
     <div className="App">
       <Nav name="Logan Potts" />
+      <div className="blog-container">
       {posts.map(({ timestamp, source }) => (
         <BlogPost timestamp={timestamp} source={source} />
       ))}
+      </div>
     </div>
   );
 }
