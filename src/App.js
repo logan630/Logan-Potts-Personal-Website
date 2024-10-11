@@ -1,11 +1,13 @@
 import './App.css';
-import Nav from './Nav.js';
-import BlogPost from './BlogPost.js';
+import Nav from './components/Nav.js';
+import BlogPost from './components/BlogPost.js';
 import { useState, useEffect } from 'react';
 
 function App() {
+  // posts is an array of javascript objects, each containing a timestamp and source
   const [posts, setPosts] = useState([]);
 
+  // retrieve the list of current posts from posts.js
   useEffect(() => {
     fetch('posts.json')
       .then((res) => res.text())

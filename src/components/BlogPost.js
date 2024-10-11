@@ -7,8 +7,10 @@ import remarkMath from 'remark-math';
 import 'katex/dist/katex.min.css';
 
 const BlogPost = ({ timestamp, source }) => {
+    // Markdown is a string, taken from some .md file
     const [markdown, setMarkdown] = useState('');
 
+    // Retrieve the contents of the desired file found at the path given by source
     useEffect(() => {
         fetch(source)
             .then((res) => res.text())
@@ -17,11 +19,11 @@ const BlogPost = ({ timestamp, source }) => {
 
     return (
         <div className="post">
-            <p className="timestamp">{timestamp}</p>
+            {timestamp ? <p className="timestamp">{timestamp}</p> : <></>}
             <Markdown 
                 className="post-content"
                 children={markdown}
-                
+
                 // Renders mathematical formulas written in Latex syntax
                 remarkPlugins={[remarkMath]}
                 rehypePlugins={[rehypeKatex]}
