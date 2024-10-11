@@ -10,7 +10,7 @@ const Nav = ({ name }) => {
 
     return (
         <nav className="navbar">
-            <NameTag name={name} />
+            <NavLink to={'/'} children={<NameTag name={name} />} className='clear'/>
             <div className="nav-links">
                 <NavLink 
                     to={'blog'}

@@ -44,3 +44,9 @@
 .nametag h1 {
     font-size: 1.8vw;
 }
+
+.clear {
+    background-color: #282c34;
+    color: white;
+    text-decoration: none;
+}
