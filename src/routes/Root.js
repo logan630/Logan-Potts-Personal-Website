@@ -1,9 +1,9 @@
-import './App.css';
-import Nav from './components/Nav.js';
-import BlogPost from './components/BlogPost.js';
+import '../css/Root.css';
+import Nav from '../components/Nav.js';
+import BlogPost from '../components/BlogPost.js';
 import { useState, useEffect } from 'react';
 
-function App() {
+const Root = () => {
   // posts is an array of javascript objects, each containing a timestamp and source
   const [posts, setPosts] = useState([]);
 
@@ -26,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default Root;
