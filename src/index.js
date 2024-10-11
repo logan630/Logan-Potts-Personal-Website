@@ -4,6 +4,10 @@ import './css/index.css';
 import Root from './routes/Root.js';
 import Blog from './routes/Blog.js';
 import Home from './routes/Home.js';
+import Work from './routes/Work.js';
+import Projects from './routes/Projects.js';
+import CourseNotes from './routes/CourseNotes.js';
+import Games from './routes/Games.js';
 import { 
   createBrowserRouter,
   RouterProvider,
@@ -18,9 +22,25 @@ const router = createBrowserRouter(
       element={<Root />}
     >
       <Route index element={<Home />} />
+      <Route
+        path="work"
+        element={<Work />}
+      />
+      <Route 
+        path="projects"
+        element={<Projects />}
+      />
       <Route 
         path="blog"
         element={<Blog />}
+      />
+      <Route 
+        path="course_notes"
+        element={<CourseNotes />}
+      />
+      <Route 
+        path="games"
+        element={<Games />}
       />
     </Route>
   )
