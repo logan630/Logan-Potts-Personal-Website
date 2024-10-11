@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;              /* Use flexbox for layout */
+    align-items: center;       /* Center items vertically */
+    background-color: #282c34; /* Example background color */
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.nav-links {
+    margin-left: auto;         /* Push links to the right */
+}
+
+.nav-links a {
+    padding: 12% 25%;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.15vw;
+}
+
+.active {
+    background-color: white;
+    color: #282c34;
+}
+
+.inactive {
+    color: white;              
+    background-color: #282c34;
+}
+
+.inactive:hover {
+    background-color: #484c54;
+}
+
+.nametag h1::after{
+    content:'';
+    display:block;
+    width:130%;
+    margin-top: 5%;
+    border-bottom: 5px dashed white;
+    margin-bottom: 0;
+}
+
+.nametag h1 {
+    font-size: 1.8vw;
+}
