@@ -1,5 +1,6 @@
 html {
   background-color: #282c34;
+  overflow: scroll;
 }
 
 .App {

@@ -15,7 +15,7 @@ const BlogPost = ({ timestamp, source }) => {
         fetch(source)
             .then((res) => res.text())
             .then((text) => setMarkdown(text));
-    }, []);
+    }, [source]);
 
     return (
         <div className="post">

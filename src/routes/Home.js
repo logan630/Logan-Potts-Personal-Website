@@ -15,11 +15,11 @@ const Home = () => {
                 <div className="contact">
                     {/* <h1>My Links</h1> */}
                     <div className="icons">
-                        <a href="https://github.com/logan630" target="_blank">
-                            <img src={github_icon}></img>
+                        <a href="https://github.com/logan630" target="_blank" rel="noreferrer">
+                            <img src={github_icon} alt="github"></img>
                         </a>
-                        <a href="mailto:logandp630@outlook.com" target="_blank">
-                            <img src={email_icon}></img>
+                        <a href="mailto:logandp630@outlook.com" target="_blank" rel="noreferrer">
+                            <img src={email_icon} alt="email"></img>
                         </a>
                     </div>
                 </div>

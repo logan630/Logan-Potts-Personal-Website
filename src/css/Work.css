@@ -1,0 +1,18 @@
+.workContainer {
+  /* overflow: scroll;  */
+}
+
+.workInfo {
+  text-align: left;
+  width: 60%;
+  margin: auto;
+}
+
+.clickable {
+  color: #ff9999;
+}
+
+.clickable:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
