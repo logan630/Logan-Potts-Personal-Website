@@ -34,7 +34,7 @@ const Nav = ({ name }) => {
                     to={'course_notes'}
                     className={ getClassName }
                 >
-                    Course Notes
+                    Notes and Tutorials
                 </NavLink>
                 <NavLink 
                     to={'games'}

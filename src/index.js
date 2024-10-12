@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css';
 import Root from './routes/Root.js';
-import Blog from './routes/Blog.js';
+import Blog, { loader as blogLoader } from './routes/Blog.js';
 import Home from './routes/Home.js';
 import Work from './routes/Work.js';
 import Projects from './routes/Projects.js';
@@ -32,6 +32,7 @@ const router = createBrowserRouter(
       />
       <Route 
         path="blog"
+        loader={ blogLoader }
         element={<Blog />}
       />
       <Route 
