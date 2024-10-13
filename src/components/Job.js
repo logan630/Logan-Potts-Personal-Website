@@ -52,7 +52,14 @@ const Job = ({
       </div>
     </div>
   ) : (
-    <p className="preview">- <span className="previewText" onClick={handleClick}>{preview}</span></p>
+    <div className="previewContainer">
+      <p className="preview">
+        <span className="previewText" onClick={handleClick}>{preview}</span>
+      </p>
+      <p className="previewDate">
+        {date}
+      </p>
+    </div>
   );
 }
 

@@ -1,11 +1,17 @@
-.workContainer {
-  /* overflow: scroll;  */
-}
-
 .workInfo {
   text-align: left;
   width: 60%;
   margin: auto;
+  margin-bottom: 2%;
+}
+
+.workInfo::after {
+  content: '';
+  margin-top: 4%;
+  margin-left: -5%;
+  display: block;
+  width: 105%;
+  border-bottom: 1px solid white;
 }
 
 .clickable {
