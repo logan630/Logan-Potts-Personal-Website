@@ -36,12 +36,7 @@ const Nav = ({ name }) => {
                 >
                     Notes and Tutorials
                 </NavLink>
-                <NavLink 
-                    to={'games'}
-                    className={ getClassName }
-                >
-                    Games
-                </NavLink>
+
             </div>
         </nav>
     )

@@ -7,7 +7,6 @@ import Home from './routes/Home.js';
 import Work from './routes/Work.js';
 import Projects from './routes/Projects.js';
 import CourseNotes from './routes/CourseNotes.js';
-import Games from './routes/Games.js';
 import { 
   createBrowserRouter,
   RouterProvider,
@@ -38,10 +37,6 @@ const router = createBrowserRouter(
       <Route 
         path="course_notes"
         element={<CourseNotes />}
-      />
-      <Route 
-        path="games"
-        element={<Games />}
       />
     </Route>
   )
