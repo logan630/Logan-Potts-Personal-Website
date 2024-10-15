@@ -11,6 +11,9 @@
   width: 70%;
   margin: auto;
   margin-bottom: 2%;
+  margin-top: 3%;
+  font-weight: bold;
+  font-size: 1.2vw;
 }
 
 .workInfo::after {
@@ -23,10 +26,23 @@
 }
 
 .clickable {
-  color: #ff9999;
+  /* color: #ff9999; */
+  color: white;
+  background-color: #465579;
+  padding: 0.1% 0.1%;
+  margin-left: 50%;
+  height: 1.8vw;
+  width: 7.6vw;
+  text-align: center;
+  border: 0.75px solid white;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-weight: bold;
 }
 
 .clickable:hover {
   cursor: pointer;
-  text-decoration: underline;
+  background-color: #263559;
 }

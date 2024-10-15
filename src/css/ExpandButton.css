@@ -1,6 +1,6 @@
 .expandButton {
   color: white;
-  background-color: #ff6666;
+  background-color: #667599;
   padding: 0.1% 0.1%;
   margin-top: 1.8%;
   margin-right: 1.5%;
@@ -15,7 +15,7 @@
 }
 
 .expandButton:hover {
-  background-color: #bb2222;
+  background-color: #445377;
   cursor: pointer;
 }
 

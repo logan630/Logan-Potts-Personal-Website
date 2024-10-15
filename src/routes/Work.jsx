@@ -16,7 +16,7 @@ const Work = () => {
     return (
       <div className="workContainer">
         <h1 className="workTitle">Work Experience</h1>
-        <p className="workInfo">Click on any of the jobs for more information, or click <span className="clickable" onClick={handleClick}>here</span> to toggle the entire list on/off.</p>
+        <p className="workInfo">Click on any of the jobs for more information. <span className="clickable" onClick={handleClick}>{activity.reduce((x,y) => x && y, true) ? 'Collapse All' : 'Expand All'}</span></p>
         
         {/* Job 6 */}
         <Job
