@@ -1,4 +1,4 @@
-import NameTag from './NameTag.js'
+import NameTag from './NameTag.jsx'
 import { NavLink } from 'react-router-dom';
 import '../css/Nav.css';
 

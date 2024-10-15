@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './css/index.css';
-import Root from './routes/Root.js';
-import Blog, { loader as blogLoader } from './routes/Blog.js';
-import Home from './routes/Home.js';
-import Work from './routes/Work.js';
-import Projects from './routes/Projects.js';
-import CourseNotes from './routes/CourseNotes.js';
+import Root from './routes/Root.jsx';
+import Blog, { loader as blogLoader } from './routes/Blog.jsx';
+import Home from './routes/Home.jsx';
+import Work from './routes/Work.jsx';
+import Projects from './routes/Projects.jsx';
+import CourseNotes from './routes/CourseNotes.jsx';
 import { 
   createBrowserRouter,
   RouterProvider,

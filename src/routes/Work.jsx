@@ -1,4 +1,4 @@
-import Job from '../components/Job.js';
+import Job from '../components/Job.jsx';
 import { useState } from 'react';
 import '../css/Work.css';
 

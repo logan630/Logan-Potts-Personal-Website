@@ -1,4 +1,4 @@
-import BlogPost from '../components/BlogPost.js';
+import BlogPost from '../components/BlogPost.jsx';
 import { useLoaderData } from 'react-router-dom';
 import "../css/Blog.css";
 

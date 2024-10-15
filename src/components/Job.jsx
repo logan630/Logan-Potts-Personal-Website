@@ -1,4 +1,5 @@
 import '../css/Job.css';
+import ExpandButton from './ExpandButton.jsx';
 
 const Job = ({ 
   // Information to be displayed 
@@ -41,18 +42,22 @@ const Job = ({
           <p className="date">{date}</p>
         </div>
       </div>
-      <div className="listContainer">
-        <ul>
-        {
-          bullets.map((text) => 
-            <li className="listElement">{text}</li>
-          )
-        }
-        </ul>
+      <div className="bottomContainer">
+        <div className="listContainer">
+          <ul>
+          {
+            bullets.map((text) => 
+              <li className="listElement">{text}</li>
+            )
+          }
+          </ul>
+        </div>
+        <ExpandButton onClick={handleClick} isDown={false} />
       </div>
     </div>
   ) : (
     <div className="previewContainer">
+      <ExpandButton onClick={handleClick} isDown={true} />
       <p className="preview">
         <span className="previewText" onClick={handleClick}>{preview}</span>
       </p>

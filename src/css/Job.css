@@ -56,6 +56,14 @@
   font-size: 1.15vw;
 }
 
+.bottomContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+
 .listContainer {
   width: 75%;
   margin-left: 0;
@@ -63,7 +71,7 @@
 
 .listElement {
   font-size: 1.3vw;
-  line-height: 4vh;
+  line-height: 1.8vw;
   margin: 1% 0%;
 }
 
